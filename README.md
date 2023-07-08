@@ -1,1 +1,1 @@
-# CSE 212
+# cse212-course
