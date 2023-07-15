@@ -19,6 +19,7 @@ It is important to remember that the front of the stack is where the first item 
 ### 1. The Stack of Books on a Desk
 If you were to ask your friends and family to borrow their favorite books, you would probably receive a couple of books to read. Imagine that every time a friend or family member gives you a book, you put it on your desk, creating a stack of books. The last book handed to you is placed on the top of the pile, making it the first book ready to be grabbed. When you add a book to the stack, you use the `push` operation, as we would say in programming. The `push` operation adds the item to the back of the stack and makes it the first book you can take or remove from the stack using the `pop` operation. The `pop` operation not only removes the last item from the stack, but also returns its value if you need to store it.
 
+![Alternate Text to Display](/Stacks.jpg)
 
 To illustrate this, we have created a class called **Stack_of_Books**. The class creates an empty array and includes three functions: *push, pop, and is_empty.*
 
@@ -89,18 +90,18 @@ Complete the Browser Tab Tracker and write two test scenarios.
 
 The program should support the following operations:
 
-`Open a New Tab:` Add a new tab to the stack of browser tabs.
-`Close the Current Tab:` Remove and display the URL of the current tab from the stack.
-`View the Current Tab:` Display the URL of the current tab without removing it from the stack.
-`Check if Tabs are Open:` Check if there are any tabs open in the stack.
-`View All Tabs:` Display all the URLs of the tabs in the stack without removing them.
+* **Open a New Tab:** Add a new tab to the stack of browser tabs.
+* **Close the Current Tab:** Remove and display the URL of the current tab from the stack.
+* **View the Current Tab:** Display the URL of the current tab without removing it from the stack.
+* **Check if Tabs are Open:** Check if there are any tabs open in the stack.
+* **View All Tabs:** Display all the URLs of the tabs in the stack without removing them.
 
 The program should use the following stack operations:
 
-`Push:` Add an item to the top of the stack.
-`Pop:` Remove and retrieve the item from the top of the stack.
-`Peek:` Retrieve the item from the top of the stack without removing it.
-`isEmpty:` Check if the stack is empty.
+* **Push:** Add an item to the top of the stack.
+* **Pop:** Remove and retrieve the item from the top of the stack.
+* **Peek:** Retrieve the item from the top of the stack without removing it.
+* **isEmpty:** Check if the stack is empty.
 
 
 ### Tasks
