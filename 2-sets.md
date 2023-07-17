@@ -91,43 +91,74 @@ print("Teachers who are married but not younger than 30:", difference_set)
 ```
 In the example above, we use the `difference` method on the `married_teachers` set, passing `younger_than_30_teachers` as the argument. The resulting set contains the teachers who are married but not younger than 30.
 
-## Problem to Solve: Browser Tab Tracker
-Complete the Browser Tab Tracker and write two test scenarios.
-
-The program should support the following operations:
-
-* **Open a New Tab:** Add a new tab to the stack of browser tabs.
-* **Close the Current Tab:** Remove and display the URL of the current tab from the stack.
-* **View the Current Tab:** Display the URL of the current tab without removing it from the stack.
-* **Check if Tabs are Open:** Check if there are any tabs open in the stack.
-* **View All Tabs:** Display all the URLs of the tabs in the stack without removing them.
-
-The program should use the following stack operations:
-
-* **Push:** Add an item to the top of the stack.
-* **Pop:** Remove and retrieve the item from the top of the stack.
-* **Peek:** Retrieve the item from the top of the stack without removing it.
-* **isEmpty:** Check if the stack is empty.
-
-
-### Tasks
-* Fix the `open_tab` function
-* Implement the `view_all_tabs` function
+## Problem to Solve: Sets of Fruits and Vegetables
+In this section, you will work with two sets: one representing fruits and the other representing vegetables. You will practice various set operations, such as adding, removing, and updating elements. Additionally, you will perform operations like finding the union, difference, and intersection of sets, as well as checking for the presence of specific elements.
 
 ``` python
+fruits = {"apple", "lemon", "orange", "grape", "mango", "tomato"}
+vegetables = {"carrot", "tomato", "broccoli", "potato", "cabbage", "lemon"}
 
+# Test Scenario 1: Add a new fruit (strawberry)
+fruits.add("strawberry")
+print("Test #1")
+print("Fruits (after adding strawberry):", fruits) # Expected output: Fruits (after adding strawberry): {'grape', 'orange', 'apple', 'tomato', 'mango', 'lemon', 'strawberry'}
+
+# Test Scenario 2: Delete a vegetable (broccoli)
+print("Test #2")
+print("Vegetables (after removing broccoli):", vegetables)  # Expected output: Vegetables (after removing broccoli): {'carrot', 'tomato', 'potato', 'cabbage', 'lemon'}
+
+# Test Scenario 3: Update a fruit (Remove grape and add pineaple)
+print("Test #3")
+print("Fruits (after updating grape to pineapple):", fruits)  # Expected output: Fruits (after updating grape to pineapple): {'apple', 'orange', 'mango', 'tomato', 'pineapple', 'lemon', 'strawberry'}
+
+# Test Scenario 4: Union of fruits and vegetables
+combined_set = fruits.union(vegetables)
+print("Test #4")
+print("Combined Set (union of fruits and vegetables):", combined_set)  # Expected output: Combined Set (union of fruits and vegetables): {'apple', 'orange', 'mango', 'carrot', 'cabbage', 'strawberry', 'tomato', 'lemon', 'potato'}
+
+# Test Scenario 5: Difference between fruits and vegetables
+fruits_only = pass
+print("Test #5")
+print("Fruits Only (difference between fruits and vegetables):", fruits_only)  # Expected output: Fruits Only (difference between fruits and vegetables): {'orange', 'mango', 'strawberry', 'pineapple'}
+
+# Test Scenario 6: Intersection of fruits and vegetables
+common_items = pass
+print("Test #6")
+print("Common Items (intersection of fruits and vegetables):", common_items)  # Expected output: Common Items (intersection of fruits and vegetables): {'lemon', 'tomato'}
+
+# Test Scenario 7: Check if a specific fruit is present
+is_mango_present = pass
+print("Test #7")
+print("Is Mango Present in Fruits:", is_mango_present)  # Expected output: Is Mango Present in Fruits: True
 ```
 
 ### Test 1:
-* 
-* 
-* 
-* 
+* Add a new fruit (strawberry)
+* Print the updated set of fruits
 
 ### Test 2:
-* 
-* 
-* 
-* 
+* Delete a vegetable (broccoli)
+* Print the updated set of vegetables
+
+### Test 3:
+* Update a fruit (Remove grape and add pineapple)
+* Print the updated set of fruits
+
+### Test 4:
+* Find the union of the sets of fruits and vegetables
+* Print the combined set
+
+### Test 5:
+* Find the difference between the sets of fruits and vegetables
+* Print the set of fruits only
+
+### Test 6:
+* Find the intersection of the sets of fruits and vegetables
+* Print the common items
+
+### Test 7:
+* Check if the fruit "mango" is present in the set of fruits
+* Print the result
+
 
 You can check your code with the solution here: [Solution](sets.py)
