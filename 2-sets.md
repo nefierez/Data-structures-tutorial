@@ -30,6 +30,7 @@ In Python, we can work with sets to perform various operations. Sets allow us to
 | member(value)        | Determines if "value" is in the set    | `if value in my_set:`     | O(1) - Performance of hashing the value (assuming good conflict resolution) |
 | size()               | Returns the number of items in the set | `length = len(my_set)`    | O(1) - Performance of returning the size of the set         |
 
+![Sets Structure](sets.jpg)
 
 ## Basic Mathematical Operations on Sets
 

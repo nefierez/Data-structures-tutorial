@@ -4,7 +4,7 @@ A stack is a data structure that can be implemented using lists. It serves vario
 ## Stacks in Python
 In Python, we can represent a stack using a list. To add an item to the top of the stack, we can use the append() function on the list. Similarly, to remove items from the top of the stack, we can use the pop() function, which not only removes the item but also deletes it from the list. The size of the stack can be determined by using the len() function on the list. It's important to note that the performance of the stack implemented with a Python list relies on the performance of the underlying dynamic array.
 
-It is important to remember that the front of the stack is where the first item of the stack is found, typically located at index 0 of a dynamic array. The back of the stack refers to the end of the dynamic array, where push and pop operations occur.
+It is important to remember that the front of the stack is where the first item of the stack is found, typically located at index 0     of a dynamic array. The back of the stack refers to the end of the dynamic array, where push and pop operations occur.
 
 | Common Stack Operation | Description | Python Code | Performance |
 |-----------------------|-------------|-------------|-------------|
@@ -19,7 +19,7 @@ It is important to remember that the front of the stack is where the first item 
 ### 1. The Stack of Books on a Desk
 If you were to ask your friends and family to borrow their favorite books, you would probably receive a couple of books to read. Imagine that every time a friend or family member gives you a book, you put it on your desk, creating a stack of books. The last book handed to you is placed on the top of the pile, making it the first book ready to be grabbed. When you add a book to the stack, you use the `push` operation, as we would say in programming. The `push` operation adds the item to the back of the stack and makes it the first book you can take or remove from the stack using the `pop` operation. The `pop` operation not only removes the last item from the stack, but also returns its value if you need to store it.
 
-![Alternate Text to Display](Stacks.jpg)
+![Stack of Books](Stacks.jpg)
 
 To illustrate this, we have created a class called **Stack_of_Books**. The class creates an empty array and includes three functions: *push, pop, and is_empty.*
 
